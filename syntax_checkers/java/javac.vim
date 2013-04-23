@@ -46,11 +46,11 @@ if !exists("g:syntastic_java_javac_temp_dir")
 endif
 
 if !exists("g:syntastic_java_javac_autoload_maven_classpath")
-    let g:syntastic_java_javac_autoload_maven_classpath = 1
+    let g:syntastic_java_javac_autoload_maven_classpath = 0
 endif
 
 if !exists('g:syntastic_java_javac_config_file_enabled')
-    let g:syntastic_java_javac_config_file_enabled = 0
+    let g:syntastic_java_javac_config_file_enabled = 1
 endif
 
 if !exists('g:syntastic_java_javac_config_file')
