@@ -37,6 +37,8 @@ function! SyntaxCheckers_python_flake8_GetLocList()
     let errorformat = '%E%f:%l: could not compile,%-Z%p^,'.
             \'%W%f:%l:%c: F%n %m,'.
             \'%W%f:%l:%c: C%n %m,'.
+            \'%W%f:%l:%c: R%n %m,'.
+            \'%W%f:%l:%c: N%n %m,'.
             \'%E%f:%l:%c: %t%n %m,'.
             \'%E%f:%l: %t%n %m,%-G%.%#'
     return SyntasticMake({ 'makeprg': makeprg, 'errorformat': errorformat })
